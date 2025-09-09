@@ -1,0 +1,502 @@
+extends ../../templates/page/template.page-base-adaptativo.pug
+
+block styles
+	link(rel="stylesheet", href="style.css")
+
+block body
+
+		.header
+		.loaderBase
+			.lds-eclipse
+				.spinner
+				.spinner.reverse
+
+		.body
+			section#local1.sec1.local.local1(local=1)
+				.base
+					.baseCenter.animated.fadeInUp.delay2
+						h2.mt0 TREINAMENTO ANUAL DE COMPLIANCE
+						
+				
+					.containerTxt.wow.fadeInUp.delay3
+						.text.par1.white 
+							| Na AstraZeneca, <b>colocar os pacientes em primeiro lugar</b> significa agir com integridade em nossas <b>decisões</b> e <b>relacionamentos ligados ao negócio</b>.
+						.text.text1.mt1.par2.white 
+							| Este treinamento foi desenvolvido para apoiarmos os times na construção de uma <b>cultura ética e capaz de sustentar o crescimento com responsabilidade</b>.
+						.text.text1.mt1.white 
+							| Diante de desafios como <b>maior fiscalização</b>, <b>concorrência local</b> e <b>expansão das atividades promocionais</b>, é essencial que todos estejam preparados para tomar decisões baseadas em nossos princípios para <b>proteger a reputação da AstraZeneca</b> e <b>garantir a segurança dos nossos pacientes</b>.
+						.text.text1.mt1.white 
+							| No treinamento, vamos abordar os <b>principais riscos que impactam nossas operações</b>, como: suborno, corrupção, promoção off label, privacidade de dados, fraude, concorrência e propriedade intelectual. E oferecer, claro, <b>ferramentas práticas para mitigá-los</b>.
+						.text.text1.mt1.white
+							| <b>Afinal, Compliance é responsabilidade de todos. </b>
+						.text.text1.mt1.white
+							| Vamos aproveitar esse momento para reforçar o nosso compromisso com a Ética, a Transparência e a Excelência.
+						
+						.barra
+						img.img1.wow.fadeInUp.delay3(src="../../assets/img/2025b/section01.png", alt="")
+						img.img2.wow.zoomIn.delay5(src="../../assets/img/2025b/section01b.png", alt="")
+						
+					
+					.containerTxt.containerTxt2.wow.fadeInUp.delay3
+						h2.azul
+							| DESAFIOS ENFRENTADOS
+						.text.text1.mt1.roxo.bold 
+							| Aumento da Fiscalização Governamental
+						.text.text1 
+							| Enfrentamos uma concorrência intensa de grandes empresas locais que podem se beneficiar de maior apoio governamental.
+
+						.text.text1.mt1.roxo.bold 
+							| Necessidade de Capacidades e Talentos
+						.text.text1 
+							| O crescimento dos nossos negócios exige mais capacidades e talentos, incluindo liderança empresarial e gestão de riscos, para enfrentar os desafios futuros.
+						
+						.text.text1.mt1.roxo.bold 
+							| Crescimento das Atividades Promocionais e Projetos Inovadores
+						.text.text1 
+							| O aumento dessas atividades traz o desafio de gerenciá-las de forma eficaz e monitorar os riscos associados.
+						
+						.text.text1.mt1.roxo.bold 
+							| Colaboração com Parceiros do Ecossistema
+						.text.text1 
+							| O envolvimento com terceiros, especialmente em iniciativas como o <b>Transform Care</b>, implica na gestão de riscos adicionais.
+
+
+						.player
+							button.openModal.pulse(mod="modalGeral1") 
+								img.wow.zoomIn(src="../../assets/img/2025b/section01c.png", alt="")
+			
+			.modalBase.modalGeral.modalGeral1.wow.fadeIn
+				.modalBaseData
+					video(src="../../assets/video/video1.mp4" controls controlsList="nodownload"  poster="../../assets/video/video1.png")
+					button.close-btn.modal-close.pulse 
+						img.wow.zoomIn(src="../../assets/img/close.svg", alt="")
+							
+						
+
+				//- .containerVideo.wow.zoomIn.delay1
+				//- 		video(src="../../assets/video/video1.mp4" controls controlsList="nodownload"  poster="../../assets/video/video1.png")
+
+				
+			
+				
+			//- .secRef
+			section#local2.sec2.atB.at01.local.local2(local=2)
+				img.img1.wow.fadeInUp.delay3(src="../../assets/img/2025b/section02.png", alt="")
+				
+				.info.wow.fadeInUp
+					.sec2_block01.wow.fadeInUp
+						h2
+							| ANÁLISE DE RISCOS
+						.text.white.mt1
+							| Fundamental para garantir decisões éticas e alinhadas aos valores da AZB. Para orientar esse processo, utilizamos quatro princípios-chave, os chamados '4Ps', que servem como reflexão para avaliar dilemas e tomar decisões responsáveis. Clique para conhecê-los:
+
+
+				
+					<div class="flipcards wow fadeInUp">
+						<div class="flipcard flipcard--red">
+							<div class="flipcard__inner">
+								<div class="__front">
+									<h1>1</h1>
+								</div>
+								<div class="__back">
+									h4 Propósito
+									p Está alinhado com nossos valores? Essa decisão pode impactar nossa reputação como empresa?
+									h1 1
+								</div>
+							</div>
+						</div>
+						<div class="flipcard flipcard--blue">
+							<div class="flipcard__inner">
+								<div class="__front">
+									<h1>2</h1>
+								</div>
+								<div class="__back">
+									h4 Política
+									p É legal e está em conformidade? É permitido pelas nossas Políticas e Procedimentos e pelas leis locais?
+									h1 2
+								</div>
+							</div>
+						</div>
+						<div class="flipcard flipcard--yellow">
+							<div class="flipcard__inner">
+								<div class="__front">
+									<h1>3</h1>
+								</div>
+								<div class="__back">
+									h4 Percepção
+									p Preciso de mais informações para tomar uma decisão consciente?
+									h1 3
+								</div>
+							</div>
+						</div>
+						<div class="flipcard flipcard--yellow">
+							<div class="flipcard__inner">
+								<div class="__front">
+									<h1>4</h1>
+								</div>
+								<div class="__back">
+									h4 Processo
+									p Sei qual processo devo seguir?
+									h1 4
+								</div>
+							</div>
+						</div>
+					</div>
+
+				.text.white.wow.fadeInUp
+						| Importante considerar também nas decisões o time da primeira linha de defesa, profissionais responsáveis pela avaliação e gestão contínua de riscos, controles operacionais do dia a dia, documentação e identificação de riscos.
+				.text.white.mt1.wow.fadeInUp
+						| Assim, podemos pensar também em 3 diretrizes, clique para conhecê-las:
+				
+				.its.itsDSFD
+					.it.wow.fadeInUp
+						img.wow.zoomIn(src="../../assets/img/2025b/section02b.png", alt="")
+						.infB 1
+						.intT.wow.zoomIn Cumprir as leis e regulamentações locais, bem como os padrões éticos globais.
+					.it.wow.fadeInUp
+						img.wow.zoomIn(src="../../assets/img/2025b/section02b.png", alt="")
+						.infB 2
+						.intT.wow.zoomIn Fazer uma breve pausa, diante de um dilema, para refletir sobre as questões apresentadas pelos 4Ps.
+					.it.wow.fadeInUp
+						img.wow.zoomIn(src="../../assets/img/2025b/section02b.png", alt="")
+						.infB 3
+						.intT.wow.zoomIn A primeira linha de defesa é sempre a melhor opção.
+
+
+
+
+							
+
+					
+				
+
+				#local3.info.info2.wow.fadeInUp.atB.at02.local.local3(local=3)
+					
+					.sec2_block01.wow.fadeInUp
+						h4.prop-l1
+							| Gerenciamento de entrega de amostras junto aos HCPs
+					img.wow.zoomIn.sec2_01_img(src="../../assets/img/2025/sec03.png", alt="")
+
+					
+					.line.wow.fadeInUp
+						.text
+							| Além de promover e compartilhar conhecimento que fortalece seus relacionamentos, o controle da entrega de amostras aos médicos exige atenção. O manuseio inadequado dos medicamentos pode comprometer sua qualidade e impactar o paciente final.
+						.text.bold.azul.mt1_5 Por isso, é essencial registrar com precisão no Veeva CRM as quantidades e os lotes das amostras distribuídas a cada médico.
+						.infoSeta
+							img(src="../../assets/img/2025/sec02_setas.svg", alt="")
+							.text.azul.arrasteInfo Confira seus conhecimentos sobre esse processo, enumerando cada uma das etapas na ordem correta:
+							
+
+					.arrasteExercicio.arrasteExercicio2.wow.fadeInUp(arraste=2, exer=2)
+						.arrasteExercicioBase
+							.itCons
+								.itContainer
+									.it.it1.dragDrop_element(arraste=1) 
+										img(src="../../assets/img/2025/sec02_it1.svg", alt="")
+								.itContainer
+									.it.it2.dragDrop_element(arraste=2) 
+										img(src="../../assets/img/2025/sec02_it2.svg", alt="")
+								.itContainer
+									.it.it3.dragDrop_element(arraste=3)
+										img(src="../../assets/img/2025/sec02_it3.svg", alt="")
+								.itContainer
+									.it.it4.dragDrop_element(arraste=4)
+										img(src="../../assets/img/2025/sec02_it4.svg", alt="")
+								.itContainer
+									.it.it5.dragDrop_element(arraste=5)
+										img(src="../../assets/img/2025/sec02_it5.svg", alt="")
+								.itContainer
+									.it.it6.dragDrop_element(arraste=6)
+										img(src="../../assets/img/2025/sec02_it6.svg", alt="")
+								.itContainer
+									.it.it7.dragDrop_element(arraste=7)
+										img(src="../../assets/img/2025/sec02_it7.svg", alt="")
+								.itContainer
+									.it.it8.dragDrop_element(arraste=8)
+										img(src="../../assets/img/2025/sec02_it8.svg", alt="")
+								.itContainer
+									.it.it9.dragDrop_element(arraste=9)
+										img(src="../../assets/img/2025/sec02_it9.svg", alt="")
+
+							.contCons
+								.contContainer
+									.cont.dragDrop_element(alvo=2)
+										| Clicar em 'meu painel'
+								.contContainer
+									.cont.dragDrop_element(alvo=4)
+										| Registrar sua visita
+								.contContainer
+									.cont.dragDrop_element(alvo=8)
+										| Coletar assinatura <br>do médico
+								.contContainer
+									.cont.dragDrop_element(alvo=1)
+										| Acessar o Veeva iRep
+								.contContainer
+									.cont.dragDrop_element(alvo=3)
+										| Selecionar o <br>médico visitado
+								.contContainer
+									.cont.dragDrop_element(alvo=9)
+										| Enviar
+								.contContainer
+									.cont.dragDrop_element(alvo=6)
+										| Clicar em <br>adicionar sample
+								.contContainer
+									.cont.dragDrop_element(alvo=5)
+										| Selecionar os <br>produtos promovidos
+								.contContainer
+									.cont.dragDrop_element(alvo=7)
+										| Lançar a <br>quantidade entregue
+								
+								
+										
+
+						butom.confirmar.mt2.wow.fadeInUp
+							| <span>Clique</span> para conferir.
+
+						.feed.feed-pos.wow.fadeInUp
+							img(src="../../assets/img/2025/sec02_check.svg", alt="")
+							.text.text4
+								| <span class="bold azul">Perfeito!</span>
+						
+						.feed.feed-neg.wow.fadeInUp
+							img(src="../../assets/img/2025/sec02_neg.svg", alt="")
+							.text.text4
+								<span class="bold vermelho"> Remontamos os processos na ordem correta para facilitar o entendimento, caso tenha alguma dificuldade com esse procedimento, <a class="link vermelho" href="https://astrazeneca.sabacloud.com/Saba/Web_spf/E102PRD0001/common/ledetail/cours000000025483548/latestversion" target="_blank">clique aqui</a> para assistir ao vídeo com as orientações completas que está disponível no Cornerstone SBX.
+							
+						
+						.text.alert.alertBase.text1.mt1.wow.fadeIn
+								| Caso tenha alguma dúvida, consulte o material específico no Cornerstone SBX, busque como <b>"Transação de Amostra Grátis - Veeva"</b>
+			
+			
+				#local4.info.info3.wow.fadeInUp.atB.at03.local.local4(local=4)
+					
+					.sec2_block01.wow.fadeInUp
+						h4.prop-l1
+							| Qualidade das Amostras 
+					img.wow.zoomIn.sec2_01_img(src="../../assets/img/2025/sec04.png", alt="")
+
+
+					.line2
+						.text
+							| Para assegurar a qualidade e eficácia dos nossos medicamentos e cumprimento com as políticas da AstraZeneca, é essencial seguir algumas diretrizes importantes ao armazenar as amostras sob sua responsabilidade.
+						.text.mt1.bold.azul O vídeo a seguir traz orientações sobre armazenamento e manuseio adequado dos medicamentos.
+						.text.mt1.bold.azul Lembre-se: a preservação da qualidade das amostras sob seu cuidado <br>é sua responsabilidade.
+						.containerVideo.wow.zoomIn.delay1
+							video(src="../../assets/video/video2.mp4" controls controlsList="nodownload"  poster="../../assets/video/video2.png")
+
+
+			section#local5.sec3.wow.fadeInUp.atB.at03.local.local5(local=5)
+				
+				.info.wow.fadeInUp
+					.sec2_block01.wow.fadeInUp
+						h4.prop-l1
+							| Roubo, perda ou extravio de amostras
+					img.wow.zoomIn.sec2_01_img(src="../../assets/img/2025/sec05.png", alt="")
+
+					.line.wow.fadeInUp
+						.text
+							| No manuseio diário das amostras, podem surgir imprevistos como extravios, perdas de medicamentos e, infelizmente, casos de furtos ou roubos.
+						.text.mt1_5 Essas ocorrências podem favorecer falsificações, comércio ilegal e uso indevido dos medicamentos, o que pode comprometer não apenas a reputação da AstraZeneca, mas, principalmente, a segurança e o bem-estar dos pacientes.
+						.text.bold.azul.mt1_5 Por isso, é essencial seguir rigorosamente as orientações e os prazos estabelecidos, com atenção especial para você que atua como representante.
+						.lineExerc.mt1_5.wow.fadeInUp
+							h3.bold.roxo
+								| Você sabe dizer qual o prazo de notificação no caso de extravio de amostras?
+			
+							.exercic02.wow.fadeInUp
+								.ques
+									.itq.itq1(it=0, ques=1)
+										.circ
+										.val 12h
+									.itq.itq2(it=1, ques=2)
+										.circ
+										.val 24h
+									.itq.itq3(it=0, ques=3)
+										.circ
+										.val 48h
+									.itq.itq4(it=0, ques=4)
+										.circ
+										.val 72h
+
+								.feedQues.mt1_5.wow.fadeInUp
+									.text.feedImg.feedImgPos
+										| <b class="verde">Correto!</b> Esse é o prazo máximo para notificar qualquer extravio de amostras. Claro, o quanto antes notificar será benefício para todos.
+									.text.feedImg.feedImgNeg
+										| <b class="vermelho">Errado!</b> O prazo máximo para notificar qualquer extravio de amostras são de <b>24h</b>. Claro, o quanto antes notificar será benefício para todos.
+							
+							.baseXSSD.inativeB 
+								.alertInf.mt1_5 A notificação deve ocorrer pelo grupo no Outlook:<br> +BRCZ_ROUBOS_EXTRAVIOS_AGS
+								.text.mt1_5 <b class="roxo">Em casos de furtos ou roubos</b>, além da notificação, <b>é obrigatório registrar um Boletim de Ocorrência Policial</b> com uma descrição detalhada do incidente, incluindo o nome do produto, lote e quantidades subtraídas, para que as autoridades competentes estejam cientes e possam tomar as devidas providências.
+								.text.mt1_5 <b>Também é mandatório enviar uma cópia deste boletim para o grupo +BRCZ_ROUBOS_EXTRAVIOS_AGS</b>. Caso o boletim de ocorrência policial não contenha todos os detalhes necessários, utilize o corpo do e-mail da sua notificação para adicionar as informações essenciais que serão utilizadas pelos nossos times internos.
+								.text.textInfo.mt1_5.bold.roxo Lembre-se de que qualquer informação pode fazer uma diferença significativa na resolução do caso. Portanto, <br>relate tudo o que lembrar!
+						
+					.sec2_block02.wow.fadeInUp.inativeB
+						.badeX
+							h4.prop-l1
+								| E se as amostras forem encontradas após<br> os procedimentos realizados?
+					.baseSed.inativeB.wow.fadeInUp 
+						.text.mt1_5.azul.bold Você deve informar imediatamente, ou no prazo máximo de 24 horas, o grupo +BRCZ_ROUBOS_EXTRAVIOS_AGS no Outlook.
+						.text.mt1_5 No e-mail, descreva o nome do produto, lote e quantidades recuperadas, bem como qualquer outra informação pertinente.
+						.text.mt1_5 Lembre-se de separar essas amostras das demais que você possui e aguarde orientações sobre como realizar a devolução para a AstraZeneca. <span class="destaqueX">Estas amostras recuperadas, sob nenhuma hipótese, podem ser entregues aos médicos.</span>
+						img.wow.zoomIn.sec2_02_img(src="../../assets/img/2025/sec06.png", alt="")
+
+			section#local6.sec4.wow.fadeInUp.inativeB.local.local6(local=6)
+				
+				.info.wow.fadeInUp
+					.sec2_block01.wow.fadeInUp
+						.badeX
+							h4.prop-l1
+								| Medidas essenciais para reduzir os riscos<br> de roubo ou perda de amostras:
+					img.wow.zoomIn.sec2_01_img(src="../../assets/img/2025/sec07.png", alt="")
+
+					.line.wow.fadeInUp
+						ul
+							li Transporte apenas as amostras que serão distribuídas no dia não excedendo 24 horas, <br>mantendo o restante em um local seguro em casa. 
+							li Sempre que possível, utilize estacionamentos para maior segurança.
+							li Caso não haja estacionamento disponível, leve as amostras com você e evite deixá-las <br>desacompanhadas no veículo.
+			
+			section#local7.sec5.wow.fadeInUp.inativeB.local.local7(local=7)
+				
+				.info.wow.fadeInUp
+					.sec2_block01.wow.fadeInUp
+						h4.prop-l1
+							| Amostras Danificadas ou Suspeitas de Falsificação
+					img.wow.zoomIn.sec2_01_img(src="../../assets/img/2025/sec08b.png", alt="")
+
+					.line.wow.fadeInUp
+						.text
+							| Se identificar qualquer dano nas amostras, receber relatos de problemas de qualidade como (caixa danificada, falta de <i>blister</i> na caixinha, etc.) ou notar uma aparência incomum que possa indicar falsificação, comunique imediatamente o SAC pelo e-mail <a class="roxo" href="mailto:sac@astrazeneca.com" target="_blank">sac@astrazeneca.com</a>.
+						.text.mt1.bold.azul Não abra, manuseie ou tente corrigir possíveis avarias e, acima de tudo, não distribua essas amostras.
+						.text.mt1 A equipe de Qualidade é responsável por investigar a procedência de desvios e encaminhar os casos aos times globais.
+						.text.mt1 Por isso, <b class="azul">aguarde as orientações antes de tomar qualquer ação</b>.
+			
+			section#local8.sec6.wow.fadeInUp.inativeB.local.local8(local=8)
+				
+				.info.wow.fadeInUp
+					.sec2_block01.wow.fadeInUp
+						h4.prop-l1
+							| Amostras Vencidas
+					img.wow.zoomIn.sec2_01_img(src="../../assets/img/2025/sec09.png", alt="")
+
+					.line.wow.fadeInUp
+						.text
+							| <b class="azul">As amostras possuem um prazo de validade definido e não devem ser entregues aos pacientes após o vencimento ou com um vencimento próximo que impossibilite a utilização do produto em sua totalidade</b>. Sendo assim, para garantir a segurança no uso, é essencial que os profissionais de saúde recebam as amostras com pelo menos <b class="azul">3 meses de antecedência ao prazo final</b>.
+						.text.mt1 Esse período mínimo é necessário para que o produto percorra todo o trajeto logístico e permita ao médico prescrever um tratamento adequado.
+						.text.mt1.bold.azul Caso alguma amostra tenha um prazo inferior a 3 meses, você deve acionar o processo de logística reversa para devolvê-la à AstraZeneca para destruição.
+						.tabela
+							.headerBase Procedimento para tratativa de Amostras Vencidas
+							.bloco
+								ul 
+									li <b>Alerte seu Gerente Distrital</b> com as informações do produto, <br>lote e quantidade.
+									li <b>Aguarde orientações do operador</b> logístico para a coleta <br>dos medicamentos.
+								.text.azul.bold As amostras coletadas seguirão os procedimentos internos <br>de destruição.
+			
+			section#local9.sec7.wow.fadeInUp.inativeB.local.local9(local=9)
+				
+				.info.wow.fadeInUp
+					.sec2_block01.wow.fadeInUp
+						.badeX
+							h4.prop-l1
+								| O que fazer com as amostras em caso <br>de movimentações de colaboradores?
+					img.wow.zoomIn.sec2_01_img(src="../../assets/img/2025/sec10.png", alt="")
+
+					.line.wow.fadeInUp
+						.text
+							| A movimentação de profissionais é um processo natural, seja por promoções, <i>job rotations</i>, mudanças de unidade de negócios, afastamentos médicos ou desligamentos.
+						.text.mt1.bold.azul Mas o que fazer com as amostras nesses casos?
+						.blockTxt.mt1
+							.text O procedimento é padronizado e deve ser conduzido pelo GD. Primeiro, ele deve transferir o saldo de amostras para si próprio e, em seguida, realizar a transferência para outro representante.
+			
+			section#local10.sec8.wow.fadeInUp.inativeB.local.local10(local=10)
+				
+				.info.wow.fadeInUp
+					.sec2_block01.wow.fadeInUp
+						h4.prop-l1
+							| <i>Recall</i> de amostras
+					img.wow.zoomIn.sec2_01_img(src="../../assets/img/2025/sec11.png", alt="")
+
+					.line.wow.fadeInUp
+						.text
+							| Assista ao vídeo e conheça em detalhes mais desse importante<br> processo no nosso trato com as amostras.
+						.containerVideo.wow.zoomIn.delay1
+							video(src="../../assets/video/video3.mp4" controls controlsList="nodownload"  poster="../../assets/video/video3.png")
+			
+			section#local11.sec12.wow.fadeInUp.inativeB.local.local11(local=11)
+				
+				.info.wow.fadeInUp
+					.sec2_block01.wow.fadeInUp
+						h4.prop-l1
+							| <b>Desafio:</b> Identifique situações de risco às nossas amostras
+					img.wow.zoomIn.sec2_01_img(src="../../assets/img/2025/sec13.png", alt="")
+
+					.line.wow.fadeInUp
+						
+						.infoSeta
+							img(src="../../assets/img/2025/sec02_setas.svg", alt="")
+							.text.azul.arrasteInfo Arraste os números para associar corretamente cada texto à imagem que representa uma situação de risco — provável ou evidente — no cuidado, armazenamento ou manuseio das nossas amostras grátis.
+							
+
+					.arrasteExercicio.arrasteExercicio5.wow.fadeInUp(arraste=5, exer=3, end=1)
+						.arrasteExercicioBase
+							.itCons
+								.itContainer
+									.containTxt Amostras deixadas expostas no veículo, ou sem supervisão, durante visita <br>ao médico. 
+									.it.it1.dragDrop_element(arraste=1) 
+										img(src="../../assets/img/2025/sec02_it1.svg", alt="")
+								.itContainer
+									.containTxt Entrega de amostras com data de vencimento inferior a 90 dias.
+									.it.it2.dragDrop_element(arraste=2) 
+										img(src="../../assets/img/2025/sec02_it2.svg", alt="")
+								.itContainer
+									.containTxt Carregamento excessivo de amostras ultrapassando a entrega de um <br>dia de visitas.
+									.it.it3.dragDrop_element(arraste=3)
+										img(src="../../assets/img/2025/sec02_it3.svg", alt="")
+								.itContainer
+									.containTxt Amostras armazenadas ao lado de produtos <br>de limpeza.
+									.it.it4.dragDrop_element(arraste=4)
+										img(src="../../assets/img/2025/sec02_it4.svg", alt="")
+								.itContainer
+									.containTxt Amostras armazenadas em garagem, sem sua supervisão, e vulneráveis aos <br>insetos e à sujeira.
+									.it.it5.dragDrop_element(arraste=5)
+										img(src="../../assets/img/2025/sec02_it5.svg", alt="")
+								
+
+							.contCons
+								.contContainer
+									.cont.dragDrop_element(alvo=5)
+										img(src="../../assets/img/2025/sec13d.png", alt="")
+								.contContainer
+									.cont.dragDrop_element(alvo=2)
+										img(src="../../assets/img/2025/sec13a.png", alt="")
+								.contContainer
+									.cont.dragDrop_element(alvo=4)
+										img(src="../../assets/img/2025/sec13b.png", alt="")
+								.contContainer
+									.cont.dragDrop_element(alvo=1)
+										img(src="../../assets/img/2025/sec13e.png", alt="")
+								.contContainer
+									.cont.dragDrop_element(alvo=3)
+										img(src="../../assets/img/2025/sec13c.png", alt="")
+								
+								
+										
+
+						butom.confirmar.mt2.wow.fadeInUp
+							| <span>Clique</span> para conferir.
+
+						.feed.feed-pos.wow.fadeInUp
+							img(src="../../assets/img/2025/sec02_check.svg", alt="")
+							.text.text4
+								| <span class="bold">Você associou corretamente os textos às imagens, identificando com precisão as situações de risco no cuidado, armazenamento e manuseio das amostras grátis. Esse olhar atento é essencial para garantir boas práticas e segurança no dia a dia. Continue assim!</span>
+						
+						.feed.feed-neg.wow.fadeInUp
+							img(src="../../assets/img/2025/sec02_neg.svg", alt="")
+							.text.text4
+								| <span class="bold vermelho">Humm... teve alguns erros :(. Dê uma olhada na ordem correta.</span>
+						
+						.infoFinish.wow.fadeInUp.delay2 Você concluiu o Treinamento Anual de Amostras Grátis.
+				
+			
+
+block scripts
+	script(src="../../vendor/wow.min.js")
+	script(src="script.js")
