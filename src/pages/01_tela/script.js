@@ -25,6 +25,10 @@ events.on("ready", function () {
 
     $(this).find(".intT").removeClass("hide");
     $(this).find(".infB").addClass("hide");
+
+    if ($(this).hasClass("it3")) {
+      $("#local3").removeClass("inativeIn");
+    }
     
   })
 });
@@ -101,7 +105,7 @@ function modal() {
       $(".loaderBase").css("display", "none");
       $("html, body").animate(
         {
-          scrollTop: $("#local2").offset().top - $(".baseTop").height(),
+          scrollTop: $("#local2").offset().top,
         },
         500
       );
