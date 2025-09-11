@@ -4,7 +4,7 @@ events.on("ready", function () {
   dragdrop();
   quiz();
 
-  // controlComplete();
+  controlComplete();
   animate_wow();
 
   controlBlock();
@@ -94,10 +94,14 @@ function modal() {
   });
 
   $(".modalGeral").css("display", "none");
+ 
   $(".modalGeral .modal-close").on("click", function () {
     $(".modalGeral").css("display", "none");
     $("html").css("overflow-y", "auto");
+  })
 
+  $(".modalGeral1 .modal-close").on("click", function () {
+    
     $("[local=2]").removeClass("inativeIn");
     $(".loaderBase").css("display", "flex");
 
@@ -110,8 +114,6 @@ function modal() {
         500
       );
     }, 1000 * 1);
-
-    
 
     $(this).parent().find("video").get(0).pause();
   });
@@ -262,13 +264,9 @@ function dragdrop() {
           //   500
           // );
 
-          if (_template.attr("exer") == 1) {
-            $("[local=3]").removeClass("inativeIn");
-          }
-          if (_template.attr("exer") == 2) {
-            $("[local=4]").removeClass("inativeIn");
-            $("[local=5]").removeClass("inativeIn");
-          }
+          $("[local=4]").removeClass("inativeIn");
+          $("[local=5]").removeClass("inativeIn");
+          $("[local=6]").removeClass("inativeIn");
 
           if (_template.attr("end") == 1) {
             scorm.setCompleted();
@@ -440,11 +438,11 @@ function avaliacao(_indice, _correta, _resposta) {
 }
 
 function controlComplete() {
-  $("#controlComplete").isInViewportComplete({
+  $("#local6").isInViewportComplete({
     container: window,
     call: function () {
-      // console.log("complete one-page");
-      // scorm.setCompleted();
+      console.log("complete one-page");
+      scorm.setCompleted();
     },
   });
 }
