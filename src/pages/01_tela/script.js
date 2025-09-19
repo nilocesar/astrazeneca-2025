@@ -4,7 +4,7 @@ events.on("ready", function () {
   dragdrop();
   quiz();
 
-  controlComplete();
+  //controlComplete();
   animate_wow();
 
   controlBlock();
@@ -98,6 +98,12 @@ function modal() {
   $(".modalGeral .modal-close").on("click", function () {
     $(".modalGeral").css("display", "none");
     $("html").css("overflow-y", "auto");
+    $(this).parent().find("video").get(0).pause();
+
+    if ($(this).hasClass("modal-complete")) {
+      console.log("complete one-page");
+      scorm.setCompleted();
+    }
   })
 
   $(".modalGeral1 .modal-close").on("click", function () {
@@ -115,7 +121,7 @@ function modal() {
       );
     }, 1000 * 1);
 
-    $(this).parent().find("video").get(0).pause();
+   
   });
 }
 
